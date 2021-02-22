@@ -1,5 +1,5 @@
 {% set name = "mkdocs-click" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs_click-{{ version }}.tar.gz
-  sha256: 00959d6cfcd9cf15af081f9f9a440027e84bff700fb4c14ba6e5efc0ac75ecf6
+  sha256: 0207e59b6ae960d21dfcc3cb69ba49b40aba57570d798c23fbaf5696bd963b0c
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -33,8 +33,8 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'MkDocs extension for Click'
-  description: 'An MkDocs extension to generate documentation for Click command line applications.'
+  summary: MkDocs extension for Click
+  description: An MkDocs extension to generate documentation for Click command line applications.
   doc_url: https://github.com/DataDog/mkdocs-click
   dev_url: https://github.com/DataDog/mkdocs-click
 
