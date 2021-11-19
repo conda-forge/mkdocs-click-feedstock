@@ -1,5 +1,5 @@
 {% set name = "mkdocs-click" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs_click-{{ version }}.tar.gz
-  sha256: b34be84cde57850733fb1b32db37b472620ac2c3e97db4abbe11dbd6b98124f2
+  sha256: a506983881da5e9405fdecc03351806661f433e1c2f81092fb05c9b93998c11a
 
 build:
   noarch: python
