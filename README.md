@@ -123,4 +123,5 @@ Feedstock Maintainers
 =====================
 
 * [@JorgeGarciaIrazabal](https://github.com/JorgeGarciaIrazabal/)
+* [@hadim](https://github.com/hadim/)
 
