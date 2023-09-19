@@ -1,11 +1,11 @@
-About mkdocs-click
-==================
+About mkdocs-click-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mkdocs-click-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/DataDog/mkdocs-click
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mkdocs-click-feedstock/blob/main/LICENSE.txt)
 
 Summary: MkDocs extension for Click
 
