@@ -6,25 +6,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs_click-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mkdocs_click-{{ version }}.tar.gz
   sha256: f1c1a2ed0bd951dfbaf43e0289637645f9f91b491a2b9cec69359e17dc25b7dd
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - click >=7, <9
     - markdown >=3, <4
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - mkdocs_click
 
