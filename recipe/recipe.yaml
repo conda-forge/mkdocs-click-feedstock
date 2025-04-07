@@ -1,6 +1,6 @@
 context:
   name: mkdocs-click
-  version: 0.8.1
+  version: "0.9.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/mkdocs_click-${{ version }}.tar.gz
-  sha256: 0a88cce04870c5d70ff63138e2418219c3c4119cc928a59c66b76eb5214edba6
+  sha256: 6050917628d4740517541422b607404d044117bc31b770c4f9e9e1939a50c908
 
 build:
   number: 0
